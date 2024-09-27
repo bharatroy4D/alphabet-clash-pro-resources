@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha clash pro</title>
+    <!-- DAISY UI AND TAILWIND CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- CUSTOMIZE CSS -->
+      <link rel="stylesheet" href="/style/index.css">
+</head>
+<body class="poppins-font ">
+    <!-- MAIN CONTAINER -->
+   <main class="main bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center ">
+    <!-- HOME SECTION -->
+      <section id="home-screen" class=" text-white flex flex-col justify-center items-center min-h-screen">
+        <div class="flex flex-col justify-center items-center gap-6">
+            <h1 class="text-6xl  uppercase anton-font">Alpha clash pro</h1>
+            <p class="text-xl">Unleash your keyboard kun g fu press: "enter" to play</p>
+            <button onclick="play()" class="btn bg-white text-black">Play now</button>
+        </div>
+  
+      </section>
+      <!-- PLAY GROUND SECTION -->
+      <section id="play-ground" class="hidden">
+        <div class="flex flex-col justify-center items-center gap-8 pt-14">
+            <!-- Art-board -->
+            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                <div class="flex justify-center">
+                  <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl">Don't watch keyboard while playing</p>
+                </div>
+                <div class="flex justify-center items-center h-full">
+                  <p class="text-8xl font-bold text-black">Y</p>
+                </div>
+            </div>
+             <!-- keyboard -->
+              <div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div>
+                  <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div>
+                  <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+              </div>
+              <!-- button -->
+               <div class="button-container flex justify-between w-3/4">
+                <!-- LIFE BUTTON -->
+                <button class="btn rounded-full bg-purple-500 text-white">
+                  Life
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  <span>1</span>
+                </button>
+                <!-- SCORE BUTTON -->
+                <button class="btn rounded-full bg-purple-800 text-white">
+                  Score
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  <span>1</span>
+                </button>
+               </div>
+        </div>
+  
+      </section>
+      <!-- SCORE SECTION -->
+      <section class="score flex justify-center items-center min-h-screen hidden">
+        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-lg">
+          <h1 class="text-7xl">
+            <span class="font-bold">score : </span> 14
+          </h1>
+          <button class="btn">
+            play again
+          </button>
+          <p>Practice will make you a pro</p>
+        </div>
+      </section>
+      <script src="js/script.js"></script>
+
+   </main>
+</body>
+</html>
